@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Landing PAGE Html5 Template">
+
+    <meta name="keywords" content="landing,startup,flat">
+
+    <meta name="author" content="Made By GN DESIGNS">
+
+
+
+    <title>Saku Bank Landing Page</title>
+
+
+
+    <!-- // PLUGINS (css files) // -->
+
+    <link href="assets/js/plugins/bootsnav_files/skins/color.css" rel="stylesheet">
+
+    <link href="assets/js/plugins/bootsnav_files/css/animate.css" rel="stylesheet">
+
+    <link href="assets/js/plugins/bootsnav_files/css/bootsnav.css" rel="stylesheet">
+
+    <link href="assets/js/plugins/bootsnav_files/css/overwrite.css" rel="stylesheet">
+
+    <link href="assets/js/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+
+    <link href="assets/js/plugins/owl-carousel/owl.theme.css" rel="stylesheet">
+
+    <link href="assets/js/plugins/owl-carousel/owl.transitions.css" rel="stylesheet">
+
+    <link href="assets/js/plugins/Magnific-Popup-master/Magnific-Popup-master/dist/magnific-popup.css" rel="stylesheet">
+
+    <!--// ICONS //-->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--// BOOTSTRAP & Main //-->
+
+    <link href="assets/bootstrap-3.3.7/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+
+
+    <!--======================================== 
+
+           Preloader
+
+    ========================================-->
+
+    <div class="page-preloader">
+
+        <div class="spinner">
+
+            <div class="rect1"></div>
+
+            <div class="rect2"></div>
+
+            <div class="rect3"></div>
+
+            <div class="rect4"></div>
+
+            <div class="rect5"></div>
+
+        </div>
+
+    </div>
+    
+    <!--//** Banner**//-->
+
+    <section id="home">
+
+        <div class="container">
+
+            <div class="row">
+
+                <!-- Introduction -->
+
+                <div class="col-md-6 caption">
+
+                    <h1>Welcome To Saku Bank</h1>
+
+                    <h2>
+
+                        I am
+
+                        <span class="animated-text"></span>
+
+                        <span class="typed-cursor"></span>
+
+                    </h2>
+
+                </div>
+
+                <!-- Sign Up -->
+
+                <div class="col-md-5 col-md-offset-1">
+
+                    <form class="signup-form">
+
+                        <h2 class="text-center">Signup Now</h2>
+
+                        <hr>
+
+                        <div class="form-group" >
+
+                            <select id="branchname" type="text" class="form-control" placeholder="Branch"
+                                required="required">
+                            </select>
+                            
+                        </div>
+                    
+                        <div class="form-group">
+
+                            <input id="fullname" type="text" class="form-control" placeholder="Full Name"
+                                required="required">
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <input id="telp" type="text" class="form-control" placeholder="Telp" required="required">
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <input id="emailsignup" type="email" class="form-control" placeholder="Email Address"
+                                required="required">
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <input id="passwordsignup" type="password" class="form-control" placeholder="Password"
+                                required="required">
+
+                        </div>
+
+                        <div class="text-center status-box">
+                            <span id="signup-status"></span>
+                        </div>
+
+                        <div class="form-group text-center">
+
+                            <button id="startnow" type="submit" class="btn btn-blue btn-block">Start Now</button>
+
+                        </div>
+
+                        <div class="form-group text-center">
+
+                            <p>
+                                Already have an account?
+                            </p>
+
+                        </div>
+
+                        <div class="form-group text-center">
+                    
+                            <button type="button" class="btn btn-blue navbar-btn" data-toggle="modal"
+                            data-target="#SignIn">Sign in</button>
+                    
+                        </div>
+                        
+                    </form>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--======================================== 
+
+           Modal
+
+    ========================================-->
+
+
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="SignIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+        <div class="modal-dialog" role="document">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+
+                    <h4 class="modal-title text-center" id="myModalLabel">Sign In</h4>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <form class="signup-form">
+
+                        <div class="form-group">
+
+                            <input id="username" type="text" class="form-control" placeholder="Email Address"
+                                required="required">
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <input type="password" id="password" class="form-control" placeholder="Password" required="required">
+
+                        </div>
+
+                        <div class="text-center status-box">
+                            <span id="login-status"></span>
+                        </div>
+
+                        <div class="form-group text-center">
+
+                            <button id="login" class="btn btn-blue btn-block">Log In</button>
+
+                        </div>
+
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+    <script src="assets/bootstrap-3.3.7/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/plugins/owl-carousel/owl.carousel.min.js"></script>
+
+    <script src="assets/js/plugins/bootsnav_files/js/bootsnav.js"></script>
+
+    <script src="assets/js/plugins/typed.js-master/typed.js-master/dist/typed.min.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <script src="assets/js/plugins/Magnific-Popup-master/Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
+
+    <script src="assets/js/main.js"></script>
+
+    <script src="js/signin.js"></script>
+
+    <script src="js/signup.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+</body>
+
+
+
+</html>
