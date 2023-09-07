@@ -175,7 +175,7 @@ p {
   letter-spacing: 0.08em;
   -webkit-transition: 0.5s all;
           transition: 0.5s all;
-  box-shadow: 0px 0px 60px 0px rgba(68, 197, 238, 0.6);
+  /* box-shadow: 0px 0px 60px 0px rgba(68, 197, 238, 0.6); */
   outline: none !important; }
 
 .btn-blue:hover,
