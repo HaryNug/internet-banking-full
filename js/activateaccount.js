@@ -1,8 +1,12 @@
+const urlparams = new URLSearchParams(window.location.search)
+const aid = urlparams.get("aid")
+
+
 document.getElementById("activate").addEventListener("click", function (event) { event.preventDefault() });
 document.getElementById("activate").addEventListener("click", activate)
 
 function activate() {
-    let accountid = document.getElementById("accountid").value
+    let accountid = aid
     let deposit = document.getElementById("deposit").value
 
     let myHeaders = new Headers();

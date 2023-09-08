@@ -23,7 +23,6 @@ function getbranchdata() {
             const branchlist = document.querySelector("#branchManagement")
             branchlist.innerHTML = ""
             localStorage.setItem("branches",JSON.stringify(result.result))
-            console.log(typeof result.result, result.result[0])
 
             result.result.forEach(element => {
                 const branchData =`

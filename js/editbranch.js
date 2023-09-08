@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     let branches = JSON.parse(localStorage.getItem("branches"))
     // console.log(typeof branches, branches)
     // let branch = branches.find(br=>br.id==bid)
-    let branch = branches.find(br => br.id === bid)
+    let branch = branches.find(br => br.id == bid)
     document.getElementById("changename").value = branch.name
     document.getElementById("address").value = branch.address
 });

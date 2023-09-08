@@ -215,8 +215,8 @@
                         <!-- <h1 class="h3 mb-0 text-gray-800"></h1> -->
                         <a href="newaccount.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm mx-1">New Account</a>
                         <a href="changebranch.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm mx-1">Change Branch</a>
-                        <a href="activateaccount.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm mx-1">Activate Account</a>
-                        <a href="deactivateaccount.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm mx-1">Deactivate Account</a>
+                        <!-- <a href="activateaccount.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm mx-1">Activate Account</a> -->
+                        <!-- <a href="deactivateaccount.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm mx-1">Deactivate Account</a> -->
                     </div>
 
                     <div class="card shadow mb-4">
@@ -229,6 +229,7 @@
                                             <th>Account Id</th>
                                             <th>Status</th>
                                             <th>Saldo</th>
+                                            <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody id="accountManagement">
@@ -273,6 +274,48 @@
         </div>
     </div>
 
+    <div class="modal fade" id="activateModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+        <div class="modal-dialog" role="document">
+
+            <div class="modal-content">
+
+                <div class="modal-header text-center">
+
+                    <h4 class="modal-title" id="myModalLabel">Activate Account</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+
+
+                </div>
+
+                <div class="modal-body">
+
+                    <form class="signup-form">
+
+                        <div class="form-group">
+                            <label for="Deposit">Deposit</label>
+                            <input type="number" id="nominal" class="form-control" placeholder="Nominal" required="required">
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <a class="btn btn-primary" onclick="activate(event, id)">Confirm</a>
+
+                        </div>
+
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -291,6 +334,7 @@
     <script src="js/demo/chart-pie-demo.js"></script>
     <script src="js/admin.js"></script>
     <script src="js/accountmanagement.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- <script src="assets/js/index.js"></script> -->
 
 </body>
